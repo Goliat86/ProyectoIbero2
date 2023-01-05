@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css" type="text/css">
-    <link rel="stylesheet" href="login.css" type="text/css">
+    <link rel="stylesheet" href="registro.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
     <link rel="shortcut icon" href="img/icono.ico" alt="">
     <title>Index</title>
 </head>
@@ -14,7 +15,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-12 col-md-1212col-lg--12 col-xl-12 ">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
               
                 <nav class="navbar navbar-expand-lg navbar-light bg-light miheather">
                     <a class="navbar-brand" href="#">
@@ -31,32 +32,30 @@
                         <li class="nav-item ">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                         <a class="nav-link" href="registro.html">Registro</a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item ">
                         <a class="nav-link" href="login.html">Login</a>
                        </li>
                       </ul>
                     </div>
                 </nav>
-                <div id="mensaje">
-                  
-                </div>
-               
-                
                 <div class="contform">
                      
                   
              
                   <div class="col-9 col-sm-8 col-md-6 col-lg-5 col-xl-4 contac">
                     <div class="contact">
-                        <h3>Login:</h3>
-                        
+                        <h3>Contacto:</h3>
+                        <input class="datos" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre" required>
+                        <input class="datos" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su apellido"required>
+                        <input class="datos" type="number" name="edad" id="edad" min="18"  placeholder="Ingrese su edad" required>
                         <input class="datos" type="email" name="correo" id="correo" placeholder="Ingrese su correo" required>
                         <input class="datos" type="password" name="contraseña" id="contraseña" placeholder="Ingrese una contraseña"required>
-                        <button class="reg" type="submit" onclick="iniciarsesion()">Iniciar sesion</button>
-                        
+                        <p>Estoy de acuerdo <a href="#">Terminos y condiciones</a></p>
+                        <button class="reg" type="submit" onclick="guardarusuario()">Registrar</button>
+                        <p><a href="login.html">¿ya tengo cuenta?</a></p>
                     </div>
                 </div>    
                 </div>
@@ -147,12 +146,10 @@
         </div>
 </div>
  
-
-  
-<script src="registro.js"></script>
 <script src="login.js"></script>
+<script src="registro.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
